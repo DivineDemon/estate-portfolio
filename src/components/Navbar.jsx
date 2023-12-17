@@ -3,7 +3,7 @@ import { FaInstagram, FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 z-50 w-full flex flex-row items-center justify-around bg-[#14533B] text-white shadow-xl p-5">
+    <nav className="fixed top-0 z-50 w-[calc(100%-80px)] flex flex-row items-center justify-around rounded-xl bg-[#14533B] text-white shadow-2xl m-10 p-5">
       <img src={Logo} alt="logo" className="w-10 cursor-pointer" />
       <ul className="flex flex-1 flex-row items-center justify-center space-x-24 list-none text-lg">
         <li>
@@ -29,9 +29,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="flex flex-row items-center justify-center">
-        <FaTelegram className="w-12 h-12 hover:text-[#14533B] hover:bg-white rounded-full p-2 transition-all cursor-pointer" />
-        <FaWhatsapp className="w-12 h-12 hover:text-[#14533B] hover:bg-white rounded-full p-2 transition-all cursor-pointer" />
-        <FaInstagram className="w-12 h-12 hover:text-[#14533B] hover:bg-white rounded-full p-2 transition-all cursor-pointer" />
+        <FaTelegram className="w-12 h-12 hover:text-[#14533B] hover:bg-white rounded-lg p-2 transition-all cursor-pointer" />
+        <FaWhatsapp className="w-12 h-12 hover:text-[#14533B] hover:bg-white rounded-lg p-2 transition-all cursor-pointer" />
+        <FaInstagram className="w-12 h-12 hover:text-[#14533B] hover:bg-white rounded-lg p-2 transition-all cursor-pointer" />
       </div>
     </nav>
   );

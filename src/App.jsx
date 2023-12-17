@@ -1,5 +1,13 @@
+import Banner from "./components/Banner";
+import Navbar from "./components/Navbar";
+
 const App = () => {
-  return <h1 className="text-3xl underline font-bold">App</h1>;
+  return (
+    <>
+      <Navbar />
+      <Banner />
+    </>
+  );
 };
 
 export default App;
